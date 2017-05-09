@@ -1,0 +1,51 @@
+<resources>
+	<string name="app_name">Space quiz</string>
+
+	<!--first question - CheckBoxes-->
+	<string name="which_of_the_following">1. Which of the following are considered a moon (multiple choice - mark all correct answers)</string>
+	<string name="io">Io</string>
+	<string name="kepler">Kepler 48b</string>
+	<string name="charon">Charon</string>
+
+	<!--second question - EditText-->
+	<string name="which_space_shuttle">2. Which space shuttle flew the most missions?</string>
+	<string name="type_your_answer">type your answer here (hint: Discovery)</string>
+	<string name="answer_question_2">discovery</string>
+
+	<!--button next-->
+	<string name="next_question">Next question</string>
+
+	<!--3-5 questions - RadioButtons-->
+	<string-array name="questions">
+		<item>3. What is the closest planet to the Sun?</item>
+		<item>4. Olympus Mons is a large volcanic mountain on which planet?</item>
+		<item>5. Earth is located in which galaxy?</item>
+	</string-array>
+	<string-array name="answers_for_question_1">
+		<item>Venus</item>
+		<item>Mercury</item>
+		<item>Neptune</item>
+	</string-array>
+	<string-array name="answers_for_question_2">
+		<item>Uranus</item>
+		<item>Jupiter</item>
+		<item>Mars</item>
+	</string-array>
+	<string-array name="answers_for_question_3">
+		<item>The Milky Way Galaxy</item>
+		<item>Andromeda Galaxy</item>
+		<item>Large Magellanic Cloud</item>
+	</string-array>
+	<string-array name="correct_answers_radiobuttons">
+		<item>2</item>
+		<item>3</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+
+	<!--summary-->
+	<string name="answered_correctly">Your\'ve answered correctly on:</string>
+	<string name="congratulations">questions.</string>
+	<string name="of">of</string>
+	<string name="take_another_quiz">take another quiz</string>
+</resources>
