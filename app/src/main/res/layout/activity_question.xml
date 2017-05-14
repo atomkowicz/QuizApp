@@ -25,20 +25,17 @@
 			<RadioButton
 				android:id="@+id/radio_answer1"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:onClick="onRadioButtonClicked"/>
+				android:layout_height="wrap_content"/>
 
 			<RadioButton
 				android:id="@+id/radio_answer2"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:onClick="onRadioButtonClicked"/>
+				android:layout_height="wrap_content"/>
 
 			<RadioButton
 				android:id="@+id/radio_answer3"
 				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:onClick="onRadioButtonClicked"/>
+				android:layout_height="wrap_content"/>
 
 		</RadioGroup>
 

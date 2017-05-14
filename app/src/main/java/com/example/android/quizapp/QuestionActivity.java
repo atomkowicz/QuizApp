@@ -62,9 +62,6 @@ public class QuestionActivity extends AppCompatActivity {
         });
     }
 
-    public void onRadioButtonClicked(View v) {
-    }
-
     private void setQuestion(int n) {
 
         // Get all questions array from strings resource

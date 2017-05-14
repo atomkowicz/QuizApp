@@ -15,9 +15,9 @@ public class Question {
         return answers;
     }
 
-    private String question;
-    private String[] answers;
-    private int correctAnswer;
+    private final String question;
+    private final String[] answers;
+    private final int correctAnswer;
 
     public Question(String pQuestion, String[] pAnswers, String pCorrectAnswer) {
         question = pQuestion;
