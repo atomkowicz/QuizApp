@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SummaryActivity extends AppCompatActivity {
 
@@ -14,7 +15,6 @@ public class SummaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_summary);
 
-        // Get string parameter song name
         Bundle b = getIntent().getExtras();
         String score = b.getString("score");
 
@@ -25,20 +25,19 @@ public class SummaryActivity extends AppCompatActivity {
         totalAnswersTextView.setText("5");
 
         Button playAgainButton = (Button) findViewById(R.id.button_play_again);
-        TextView summaryTextView = (TextView) findViewById(R.id.summary);
 
         switch (Integer.parseInt(score)) {
             case 3:
-                summaryTextView.setText("Not so bad");
+                Toast.makeText(SummaryActivity.this, getResources().getString(R.string.not_so_bad) + score, Toast.LENGTH_LONG).show();
                 break;
             case 4:
-                summaryTextView.setText("Nice score");
+                Toast.makeText(SummaryActivity.this, getResources().getString(R.string.nice_score) + score, Toast.LENGTH_LONG).show();
                 break;
             case 5:
-                summaryTextView.setText("Great score");
+                Toast.makeText(SummaryActivity.this, getResources().getString(R.string.great_score) + score, Toast.LENGTH_LONG).show();
                 break;
             default:
-                summaryTextView.setText("Could be a bit better :)");
+                Toast.makeText(SummaryActivity.this, getResources().getString(R.string.could_be_better), Toast.LENGTH_LONG).show();
                 break;
         }
 

@@ -3,10 +3,11 @@
 			android:layout_height="match_parent"
 			android:layout_width="match_parent">
 
-	<LinearLayout android:layout_height="wrap_content"
-				  android:layout_width="match_parent"
-				  android:orientation="vertical"
-				  style="@style/Container">
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		style="@style/Container">
 
 		<TextView
 			android:layout_width="wrap_content"
@@ -50,11 +51,6 @@
 			android:layout_height="wrap_content"
 			android:text="@string/congratulations"
 			style="@style/HeadingMedium"/>
-		<TextView
-			android:id="@+id/summary"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			style="@style/HeadingMedium"/>
 
 		<Button
 			android:text="@string/take_another_quiz"
@@ -64,4 +60,5 @@
 			style="@style/ButtonNext"/>
 
 	</LinearLayout>
+
 </ScrollView>

@@ -46,17 +46,17 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (score) {
                     case 0:
-                        Toast.makeText(getApplicationContext(), "Sorry, both answers are wrong", Toast.LENGTH_LONG)
+                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.both_answers_wrong), Toast.LENGTH_LONG)
                                 .show();
                         break;
                     case 1:
                         Toast.makeText(getApplicationContext(),
-                                "You've answered correctly on one question, your score is: " + score, Toast.LENGTH_LONG)
+                                getResources().getString(R.string.one_answer_wrong) + score, Toast.LENGTH_LONG)
                                 .show();
                         break;
                     case 2:
                         Toast.makeText(getApplicationContext(),
-                                "Awesome, you've answered correctly on both questions, your score is: " + score,
+                                getResources().getString(R.string.both_answers_correct) + score,
                                 Toast.LENGTH_LONG).show();
                         break;
                 }

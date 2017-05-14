@@ -11,6 +11,9 @@
 	<string name="which_space_shuttle">2. Which space shuttle flew the most missions?</string>
 	<string name="type_your_answer">type your answer here (hint: Discovery)</string>
 	<string name="answer_question_2">discovery</string>
+	<string name="both_answers_wrong">Sorry, both answers are wrong</string>
+	<string name="one_answer_wrong">You\'ve answered correctly on one question, your score is: </string>
+	<string name="both_answers_correct">Awesome, you\'ve answered correctly on both questions, your score is: </string>
 
 	<!--button next-->
 	<string name="next_question">Next question</string>
@@ -40,12 +43,18 @@
 		<item>2</item>
 		<item>3</item>
 		<item>1</item>
-		<item>2</item>
 	</string-array>
+
+	<string name="correct_your_score_is">Correct!, your score is: </string>
+	<string name="sorry_wrong_answer">Sorry, wrong answer</string>
 
 	<!--summary-->
 	<string name="answered_correctly">Your\'ve answered correctly on:</string>
 	<string name="congratulations">questions.</string>
 	<string name="of">of</string>
 	<string name="take_another_quiz">take another quiz</string>
+	<string name="not_so_bad">Not so bad, your score is: </string>
+	<string name="nice_score">Nice score: </string>
+	<string name="great_score">Great score: </string>
+	<string name="could_be_better">Could be a bit better :)</string>
 </resources>

@@ -38,18 +38,18 @@ public class QuestionActivity extends AppCompatActivity {
                 View radioButton = radioGroup.findViewById(radioButtonID);
                 int checkedAnswer = radioGroup.indexOfChild(radioButton) + 1;
 
-                // Check if user check the correct answer
+                // Check if user checked the correct answer
                 if (question.getCorrectAnswer() == checkedAnswer) {
                     score++;
-                    Toast.makeText(QuestionActivity.this, "Correct!, your score is: " + score, Toast.LENGTH_LONG).show();
+                    Toast.makeText(QuestionActivity.this, getResources().getString(R.string.correct_your_score_is) + score, Toast.LENGTH_LONG).show();
                 } else {
-                    Toast.makeText(QuestionActivity.this, "Sorry, wrong answer", Toast.LENGTH_LONG).show();
+                    Toast.makeText(QuestionActivity.this, getResources().getString(R.string.sorry_wrong_answer), Toast.LENGTH_LONG).show();
                 }
 
                 questionNum++;
 
-                // If all questions were displayed got to summary activity,
-                // if not display next question, "uncheck" all checkboxes
+                // If all questions were displayed, go to summary activity,
+                // if not, display next question and clear all checkboxes
                 if (questionNum == answers.length) {
                     Intent intent = new Intent(QuestionActivity.this, SummaryActivity.class);
                     intent.putExtra("score", Integer.toString(score));
